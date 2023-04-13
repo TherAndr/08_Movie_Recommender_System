@@ -18,8 +18,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 ### Preprocessing ######################################################
 
-movies = pd.read_csv("C:/Users/there/Documents/WBS_Coding_School/2.Bootcamp/Project_8_/data/movies.csv")
-ratings = pd.read_csv("C:/Users/there/Documents/WBS_Coding_School/2.Bootcamp/Project_8_/data/ratings.csv")
+movies = pd.read_csv("data/movies.csv")
+ratings = pd.read_csv("data/ratings.csv")
 
 movies.rename(columns={'movieId': 'movieId', 'title':'title', 'genres':'genres'})
 ratings.rename(columns={'userId': 'userId', 'movieId': 'movieId', 'rating':'rating', 'timestamp':'timestamp'})
